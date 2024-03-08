@@ -1,3 +1,8 @@
+provider "aws" {
+  alias  = "aws_useast1"
+  region = var.region
+}
+
 resource "aws_lambda_function" "html_lambda" {
   filename         = "index.zip"
   function_name    = "myLambdaFunction"
