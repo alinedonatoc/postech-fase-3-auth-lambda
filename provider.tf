@@ -1,3 +1,9 @@
+provider "aws" {
+  alias  = "aws_useast1"
+  region = "us-east-1"
+
+}
+
 terraform {
   required_providers {
     aws = {
@@ -8,8 +14,3 @@ terraform {
 
 }
 
-provider "aws" {
-  alias  = "aws_useast1"
-  region = "us-east-1"
-
-}
