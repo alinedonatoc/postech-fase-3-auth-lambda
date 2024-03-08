@@ -7,7 +7,7 @@ resource "aws_lambda_function" "html_lambda" {
   function_name    = "myLambdaFunction"
   role             = aws_iam_role.lambda_role.arn
   handler          = "index.handler"
-  runtime          = "nodejs14.x"
+  runtime          = "nodejs20.x"
   source_code_hash = data.archive_file.lambda_package.output_base64sha256
 }
 
