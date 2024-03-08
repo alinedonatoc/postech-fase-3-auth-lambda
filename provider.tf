@@ -2,7 +2,6 @@
 # SPDX-License-Identifier: MPL-2.0
 
 terraform {
-    
 
   cloud {
     organization = "DevopsFiapSoat3-G35"
@@ -10,16 +9,11 @@ terraform {
       name = "gh-actions"
     }
   }
-  provider "aws" {
-    alias  = "aws_useast1"
-    region = "us-east-1"
- }
 
   required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 5.7.0"
-      region = "us-east-1"
     }
 
     random = {
