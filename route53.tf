@@ -1,7 +1,7 @@
 
 # DNS record using Route53.
 data "aws_route53_zone" "my_domain" {
-  name         = "sumeet.life"
+  name         = "sumeet.life."
   private_zone = false
 }
 
