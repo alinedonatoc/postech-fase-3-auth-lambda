@@ -1,5 +1,6 @@
 provider "aws" {
   region = var.region
+  alias  = "aws_useast1"
 }
 
 resource "aws_lambda_function" "html_lambda" {
